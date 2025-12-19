@@ -24,4 +24,7 @@ location / {
     proxy_set_header X-Real-IP $remote_addr;
 }
 
+<img width="409" height="114" alt="image" src="https://github.com/user-attachments/assets/9f16d893-4ac2-40bd-a4e2-75e515165361" />
+
+
 
