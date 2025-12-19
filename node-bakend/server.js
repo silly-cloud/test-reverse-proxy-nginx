@@ -1,14 +1,4 @@
-installed node
-
-Create:
-mkdir ~/node-backend && cd ~/node-backend
-vi server.js
-
-Added:
 const http = require('http');
 http.createServer((req, res) => {
   res.end('Hello from Node.js backend!');
 }).listen(3000);
-
-Run:
-node server.js
