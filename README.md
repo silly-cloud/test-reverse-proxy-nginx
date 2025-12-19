@@ -55,3 +55,20 @@ Reload NGINX
 sudo nginx -t
 sudo systemctl reload nginx
 
+
+############# SSL/TLS #################
+
+sudo openssl req -x509 -nodes -days 365 \
+ -newkey rsa:2048 \
+ -keyout /etc/ssl/private/nginx-selfsigned.key \
+ -out /etc/ssl/certs/nginx-selfsigned.crt
+
+
+
+
+ ssl_certificate /etc/ssl/certs/nginx-selfsigned.crt;
+    ssl_certificate_key /etc/ssl/private/nginx-selfsigned.key;
+
+
+
+
